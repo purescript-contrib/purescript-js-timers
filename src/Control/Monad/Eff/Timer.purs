@@ -10,10 +10,10 @@ module Control.Monad.Eff.Timer
 
 import Prelude
 
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (kind Effect, Eff)
 
 -- | The effect for the usage of a JavaScript timer.
-foreign import data TIMER :: !
+foreign import data TIMER :: Effect
 
 -- | The ID of a timer started with `setTimeout`.
 newtype TimeoutId = TimeoutId Int
