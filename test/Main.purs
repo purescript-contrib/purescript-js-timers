@@ -14,7 +14,7 @@ main = do
 
   void $ T.setTimeout 10 do
     C.log "timeout increment counter"
-    R.modify (_ + 1) counter
+    void $ R.modify (_ + 1) counter
 
   void $ T.setTimeout 50 do
     C.log "timeout check counter"
@@ -24,7 +24,7 @@ main = do
   void $ T.setTimeout 100 do
 
     t <- T.setTimeout 20 do
-      R.modify (_ + 1) counter
+      void $ R.modify (_ + 1) counter
 
     T.clearTimeout t
 
@@ -37,7 +37,7 @@ main = do
 
     i <- T.setInterval 20 do
       C.log "interval increment counter"
-      R.modify (_ + 1) counter
+      void $ R.modify (_ + 1) counter
 
     void $ T.setTimeout 90 do
       T.clearInterval i
