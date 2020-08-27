@@ -1,4 +1,4 @@
-/* global exports */
+/* no-redeclare global exports */
 "use strict";
 
 exports.setTimeout = function (ms) {
