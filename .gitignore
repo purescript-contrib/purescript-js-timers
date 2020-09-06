@@ -9,3 +9,4 @@ generated-docs
 
 node_modules
 *.lock
+package-lock.json
