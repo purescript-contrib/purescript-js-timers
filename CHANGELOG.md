@@ -32,4 +32,3 @@ Updates for 0.12
 ## [v1.0.0](https://github.com/purescript-contrib/purescript-js-timers/releases/tag/v1.0.0) - 2016-07-25
 
 Initial release
-
