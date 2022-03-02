@@ -4,7 +4,6 @@
 [![Release](http://img.shields.io/github/release/purescript-contrib/purescript-js-timers.svg)](https://github.com/purescript-contrib/purescript-js-timers/releases)
 [![Pursuit](http://pursuit.purescript.org/packages/purescript-js-timers/badge)](http://pursuit.purescript.org/packages/purescript-js-timers)
 [![Maintainer: garyb](https://img.shields.io/badge/maintainer-garyb-teal.svg)](http://github.com/garyb)
-[![Maintainer: thomashoneyman](https://img.shields.io/badge/maintainer-thomashoneyman-teal.svg)](http://github.com/thomashoneyman)
 
 Low level bindings to the JS timers API.
 
