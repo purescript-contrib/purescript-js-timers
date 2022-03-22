@@ -1,30 +1,28 @@
 /* no-redeclare global exports */
-"use strict";
-
-exports.setTimeout = function (ms) {
+export function setTimeout(ms) {
   return function (fn) {
     return function () {
       return setTimeout(fn, ms);
     };
   };
-};
+}
 
-exports.clearTimeout = function (id) {
+export function clearTimeout(id) {
   return function () {
     clearTimeout(id);
   };
-};
+}
 
-exports.setInterval = function (ms) {
+export function setInterval(ms) {
   return function (fn) {
     return function () {
       return setInterval(fn, ms);
     };
   };
-};
+}
 
-exports.clearInterval = function (id) {
+export function clearInterval(id) {
   return function () {
     clearInterval(id);
   };
-};
+}
