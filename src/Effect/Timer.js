@@ -1,6 +1,4 @@
 /* no-redeclare global exports */
-"use strict";
-
 export function setTimeout(ms) {
   return function (fn) {
     return function () {
