@@ -17,10 +17,6 @@ Other improvements:
 Breaking changes:
 - Migrate FFI to ES modules (#27 by @JordanMartinez)
 
-New features:
-
-Bugfixes:
-
 Other improvements:
 - Added `purs-tidy` formatter (#25 by @thomashoneyman)
 
