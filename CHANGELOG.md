@@ -5,11 +5,17 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
-- Migrate FFI to ES modules (#27 by @JordanMartinez)
 
 New features:
 
 Bugfixes:
+
+Other improvements:
+
+## [v6.0.0](https://github.com/purescript-contrib/purescript-js-timers/releases/tag/v6.0.0) - 2022-04-27
+
+Breaking changes:
+- Migrate FFI to ES modules (#27 by @JordanMartinez)
 
 Other improvements:
 - Added `purs-tidy` formatter (#25 by @thomashoneyman)
