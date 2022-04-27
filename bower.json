@@ -17,11 +17,11 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-effect": "master"
+    "purescript-effect": "^4.0.0"
   },
   "devDependencies": {
-    "purescript-assert": "master",
-    "purescript-console": "master",
-    "purescript-refs": "master"
+    "purescript-assert": "^6.0.0",
+    "purescript-console": "^6.0.0",
+    "purescript-refs": "^6.0.0"
   }
 }
