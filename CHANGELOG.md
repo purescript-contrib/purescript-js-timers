@@ -9,9 +9,13 @@ Breaking changes:
 New features:
 
 Bugfixes:
-- Changes the names of FFI timer functions to avoid naming clashes (#29 by @mikesol)
 
 Other improvements:
+
+## [v6.1.0](https://github.com/purescript-contrib/purescript-js-timers/releases/tag/v6.1.0) - 2022-05-02
+
+Bugfixes:
+- Changes the names of FFI timer functions to avoid naming clashes (#29 by @mikesol)
 
 ## [v6.0.0](https://github.com/purescript-contrib/purescript-js-timers/releases/tag/v6.0.0) - 2022-04-27
 
