@@ -9,6 +9,7 @@ Breaking changes:
 New features:
 
 Bugfixes:
+- Changes the names of FFI timer functions to avoid naming clashes (#29 by @mikesol)
 
 Other improvements:
 
