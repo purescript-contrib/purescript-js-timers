@@ -22,12 +22,15 @@ derive instance ordTimeoutId :: Ord TimeoutId
 -- |
 -- | The timeout delay value is capped at 4ms by the JS API, any value less than
 -- | this will be clamped.
-foreign import setTimeout :: Int -> Effect Unit -> Effect TimeoutId
+setTimeout :: Int -> Effect Unit -> Effect TimeoutId
+setTimeout = setTimeout_
+foreign import setTimeout_ :: Int -> Effect Unit -> Effect TimeoutId
 
 -- | Cancels a timeout. If the timeout has already been cancelled or has already
 -- | elapsed this will have no effect.
-foreign import clearTimeout :: TimeoutId -> Effect Unit
-
+clearTimeout :: TimeoutId -> Effect Unit
+clearTimeout = clearTimeout_
+foreign import clearTimeout_ :: TimeoutId -> Effect Unit
 -- | The ID of a timer started with `setInterval`.
 newtype IntervalId = IntervalId Int
 
@@ -40,8 +43,12 @@ derive instance ordIntervalId :: Ord IntervalId
 -- |
 -- | The interval delay value is capped at 4ms by the JS API, any value less
 -- | than this will be clamped.
-foreign import setInterval :: Int -> Effect Unit -> Effect IntervalId
+setInterval :: Int -> Effect Unit -> Effect IntervalId
+setInterval = setInterval_
+foreign import setInterval_ :: Int -> Effect Unit -> Effect IntervalId
 
 -- | Cancels an interval timer. If the interval has already been cancelled this
 -- | will have no effect.
-foreign import clearInterval :: IntervalId -> Effect Unit
+clearInterval :: IntervalId -> Effect Unit
+clearInterval = clearInterval_
+foreign import clearInterval_ :: IntervalId -> Effect Unit

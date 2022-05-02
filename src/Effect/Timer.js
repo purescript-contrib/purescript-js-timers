@@ -1,5 +1,5 @@
 /* no-redeclare global exports */
-export function setTimeout(ms) {
+export function setTimeout_(ms) {
   return function (fn) {
     return function () {
       return setTimeout(fn, ms);
@@ -7,13 +7,13 @@ export function setTimeout(ms) {
   };
 }
 
-export function clearTimeout(id) {
+export function clearTimeout_(id) {
   return function () {
     clearTimeout(id);
   };
 }
 
-export function setInterval(ms) {
+export function setInterval_(ms) {
   return function (fn) {
     return function () {
       return setInterval(fn, ms);
@@ -21,7 +21,7 @@ export function setInterval(ms) {
   };
 }
 
-export function clearInterval(id) {
+export function clearInterval_(id) {
   return function () {
     clearInterval(id);
   };
