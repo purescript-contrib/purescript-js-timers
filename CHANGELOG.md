@@ -11,6 +11,7 @@ New features:
 Bugfixes:
 
 Other improvements:
+- Migrate to registry-backed Spago and update repository tooling and CI actions.
 
 ## [v6.1.0](https://github.com/purescript-contrib/purescript-js-timers/releases/tag/v6.1.0) - 2022-05-02
 
