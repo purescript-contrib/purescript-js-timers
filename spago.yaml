@@ -1,0 +1,23 @@
+package:
+  name: js-timers
+  description: PureScript library for native JavaScript timers
+  publish:
+    version: 6.1.1
+    license: MIT
+    location:
+      githubOwner: purescript-contrib
+      githubRepo: purescript-js-timers
+  build:
+    strict: true
+  dependencies:
+    - effect: ">=4.0.0 <5.0.0"
+    - prelude: ">=6.0.0 <7.0.0"
+  test:
+    main: Test.Main
+    dependencies:
+      - assert
+      - console
+      - refs
+workspace:
+  packageSet:
+    registry: 81.4.0
